@@ -51,7 +51,11 @@ def upload_csv(request):
 
         # READ CSV
 
-        df = pd.read_csv(file_path)
+        df = pd.read_csv(
+    file_path,
+    encoding='utf-8',
+    on_bad_lines='skip'
+)
 
         # HANDLE NaN
 
@@ -123,7 +127,11 @@ def parse_csv(request):
 
     try:
 
-        df = pd.read_csv(file_path)
+        df = pd.read_csv(
+    file_path,
+    encoding='utf-8',
+    on_bad_lines='skip'
+)
 
         df = df.fillna('')
 
