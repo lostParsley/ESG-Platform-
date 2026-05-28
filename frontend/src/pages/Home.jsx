@@ -61,7 +61,7 @@ function Home() {
       const response =
       await axios.post(
 
-        "http://127.0.0.1:8000/api/upload/",
+        "https://esg-platform-eme6.onrender.com/api/upload/",
 
         formData
       );
@@ -96,7 +96,7 @@ function Home() {
       const response =
       await axios.post(
 
-        "http://127.0.0.1:8000/api/parse/",
+        "https://esg-platform-eme6.onrender.com/api/parse/",
 
         {
           file_id: fileId
