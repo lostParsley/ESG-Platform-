@@ -1,0 +1,375 @@
+body,
+html,
+#root {
+
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  min-height: 100vh;
+
+  font-family: Arial;
+}
+
+.main-container {
+
+  width: 100%;
+  min-height: 100vh;
+
+  background-image:
+  url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
+
+  background-size: cover;
+}
+
+.overlay {
+
+  width: 100%;
+  min-height: 100vh;
+
+  background:
+  rgba(0,0,0,0.55);
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  padding-top: 120px;
+}
+
+.navbar {
+
+  width: 100%;
+
+  position: absolute;
+
+  top: 0;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  padding: 25px 70px;
+}
+
+.logo {
+
+  color: #2ecc71;
+
+  font-size: 34px;
+
+  text-decoration: none;
+
+  font-weight: bold;
+}
+
+.nav-links {
+
+  display: flex;
+
+  gap: 40px;
+
+  list-style: none;
+}
+
+.nav-links a {
+
+  color: white;
+
+  text-decoration: none;
+}
+
+.title {
+
+  color: white;
+
+  font-size: 70px;
+}
+
+.subtitle {
+
+  color: white;
+
+  margin-bottom: 50px;
+}
+
+.cards-container {
+
+  display: flex;
+}
+
+.card {
+
+  width: 420px;
+
+  background:
+  rgba(255,255,255,0.95);
+
+  padding: 30px;
+
+  border-radius: 30px;
+
+  box-shadow:
+  0 20px 40px rgba(0,0,0,0.4);
+}
+
+.custom-file-upload {
+
+  background: #eee;
+
+  padding: 12px 20px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  display: inline-block;
+}
+
+.upload-btn {
+
+  width: 100%;
+
+  margin-top: 20px;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #2ecc71;
+
+  color: white;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.preview-table {
+
+  width: 100%;
+
+  margin-top: 20px;
+
+  border-collapse: collapse;
+
+  font-size: 12px;
+}
+
+.preview-table th,
+.preview-table td {
+
+  border: 1px solid #ccc;
+
+  padding: 6px;
+}
+
+/* ===================================== */
+/* RESULTS PAGE */
+/* ===================================== */
+
+.results-page {
+
+  min-height: 100vh;
+
+  background:
+  linear-gradient(
+    135deg,
+    #0f172a,
+    #1e293b
+  );
+
+  padding: 50px;
+
+  color: white;
+}
+
+.results-header {
+
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.results-title {
+
+  font-size: 56px;
+
+  margin-bottom: 10px;
+}
+
+.results-subtitle {
+
+  color: #cbd5e1;
+
+  font-size: 18px;
+}
+
+/* ===================================== */
+/* STATS */
+/* ===================================== */
+
+.stats-container {
+
+  display: flex;
+
+  gap: 25px;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  margin-bottom: 50px;
+}
+
+.stat-card {
+
+  width: 220px;
+
+  padding: 30px;
+
+  border-radius: 25px;
+
+  background:
+  rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,0.35);
+
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+
+  transform:
+  translateY(-8px);
+}
+
+.stat-card h2 {
+
+  font-size: 20px;
+
+  margin-bottom: 15px;
+}
+
+.stat-card h1 {
+
+  font-size: 50px;
+
+  margin: 0;
+}
+
+.scope1-card {
+
+  border-top:
+  5px solid #ef4444;
+}
+
+.scope2-card {
+
+  border-top:
+  5px solid #3b82f6;
+}
+
+.scope3-card {
+
+  border-top:
+  5px solid #22c55e;
+}
+
+/* ===================================== */
+/* TABLE */
+/* ===================================== */
+
+.results-table-container {
+
+  overflow-x: auto;
+}
+
+.results-table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+
+  background:
+  rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(10px);
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+.results-table thead {
+
+  background:
+  rgba(255,255,255,0.15);
+}
+
+.results-table th {
+
+  padding: 18px;
+
+  font-size: 16px;
+
+  text-align: left;
+}
+
+.results-table td {
+
+  padding: 18px;
+
+  border-top:
+  1px solid rgba(
+    255,
+    255,
+    255,
+    0.08
+  );
+}
+
+.results-table tr:hover {
+
+  background:
+  rgba(255,255,255,0.05);
+}
+
+/* ===================================== */
+/* SCOPE BADGES */
+/* ===================================== */
+
+.scope-badge {
+
+  padding: 8px 14px;
+
+  border-radius: 30px;
+
+  font-size: 14px;
+
+  font-weight: bold;
+}
+
+.scope1 {
+
+  background: #ef4444;
+}
+
+.scope2 {
+
+  background: #3b82f6;
+}
+
+.scope3 {
+
+  background: #22c55e;
+}

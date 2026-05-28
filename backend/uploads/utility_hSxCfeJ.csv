@@ -1,0 +1,11 @@
+Meter_ID,Facility,Usage_Value,Usage_Unit,Billing_Start,Billing_End,Tariff
+MTR001,Plant A,1200,kWh,01-01-2026,31-01-2026,Industrial
+MTR002,Plant B,1.5,MWh,15-01-2026,14-02-2026,Commercial
+MTR003,Plant C,-200,kWh,01-01-2026,31-01-2026,Industrial
+MTR004,Plant D,850,,01-01-2026,31-01-2026,Commercial
+MTR005,Warehouse East,980,kWh,01-02-2026,28-02-2026,Industrial
+MTR006,Head Office,2.2,MWh,01-02-2026,28-02-2026,Commercial
+MTR007,Plant E,0,kWh,01-02-2026,28-02-2026,Industrial
+MTR008,Plant F,1450,KWH,10-02-2026,09-03-2026,Industrial
+MTR009,Remote Site,300,kWh,01-02-2026,28-02-2026,Temporary
+MTR010,Plant G,999999,kWh,01-02-2026,28-02-2026,Industrial
