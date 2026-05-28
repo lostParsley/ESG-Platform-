@@ -43,19 +43,27 @@ def upload_csv(request):
         file=file
     )
 
+# READ DIRECTLY FROM MEMORY
+
+    df = pd.read_csv(
+            file,
+            encoding='utf-8',
+            on_bad_lines='skip'
+        )
+
     # FILE PATH
 
-    file_path = uploaded_file.file.path
+    # file_path = uploaded_file.file.path
 
     try:
 
         # READ CSV
 
-        df = pd.read_csv(
-    file_path,
-    encoding='utf-8',
-    on_bad_lines='skip'
-)
+#         df = pd.read_csv(
+#     file_path,
+#     encoding='utf-8',
+#     on_bad_lines='skip'
+# )
 
         # HANDLE NaN
 
